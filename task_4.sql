@@ -1,4 +1,4 @@
--- Print full description of the 'books' table
+-- Print full description of the 'Books' table from the alx_book_store database
 
 SELECT 
     COLUMN_NAME AS 'Column Name',
@@ -8,5 +8,5 @@ SELECT
     COLUMN_DEFAULT AS 'Default',
     EXTRA AS 'Extra'
 FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_SCHEMA = DATABASE()
+WHERE TABLE_SCHEMA = 'alx_book_store'
   AND TABLE_NAME = 'Books';
